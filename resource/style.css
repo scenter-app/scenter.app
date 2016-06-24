@@ -117,55 +117,43 @@ right main social a {
 	
 	font-size: 20px;
 	
-	padding-bottom: 20px;
-	
-    border-left-style: solid;
-    border-right-style: solid;
-    border-bottom-style: solid;
-	
-    border-left-width: 0px;
-    border-right-width: 0px;
-    border-bottom-width: 0px;
-	
-    border-left-color: rgba(255,255,255,0);
-    border-right-color: rgba(255,255,255,0);
-    border-bottom-color: rgba(255,255,255,0);
-	
 	transition: color 1s Linear;
 	transition:	color				1s	cubic-bezier(0.18, 0.89, 0.32, 1.28)
-			,	padding-bottom		1s	cubic-bezier(0.18, 0.89, 0.32, 1)
-			,	border-width		1s	cubic-bezier(0.18, 0.89, 0.32, 1)
-			,	border-bottom-color	1s	cubic-bezier(0.18, 0.89, 0.32, 1.28);
+			,	background			1s	cubic-bezier(0.18, 0.89, 0.32, 1.28)\;
 }
 right main social a:hover {
-	/* padding-bottom: 0px;
 	
-	border-left-width: 20px;
-    border-right-width: 20px;
-    border-bottom-width: 20px; */
+}
+right main social a.github {
+	border-radius: 100%;
+}
+right main social a.github:hover {
+	color: #4078c0;
+	
+	background: rgba(255,255,255,0);
 }
 right main social a.mail:hover {
 	color: #0072c6;
 	
-	border-bottom-color: #0072c6;
+	background: rgba(255,255,255,0);
 }
 right main social a.facebook:hover {
 	color: #3b5998;
 	
-	border-bottom-color: #3b5998;
+	background: rgba(255,255,255,0);
 }
 right main social a.twitter:hover {
 	color: #1da1f2;
 	
-	border-bottom-color: #1da1f2;
+	background: rgba(255,255,255,0);
 }
 right main social a.google-plus:hover {
 	color: #d73d32;
 	
-	border-bottom-color: #d73d32;
+	background: rgba(255,255,255,0);
 }
 right main social a.youtube:hover {
 	color: #e62117;
 	
-	border-bottom-color: #e62117;
+	background: rgba(255,255,255,0);
 }
