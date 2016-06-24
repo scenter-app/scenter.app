@@ -119,7 +119,7 @@ right main social a {
 	
 	transition: color 1s Linear;
 	transition:	color				1s	cubic-bezier(0.18, 0.89, 0.32, 1.28)
-			,	background			1s	cubic-bezier(0.18, 0.89, 0.32, 1.28)\;
+			,	background			1s	cubic-bezier(0.18, 0.89, 0.32, 1.28);
 }
 right main social a:hover {
 	
