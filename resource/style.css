@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+left {
+    display: inline-block;
+	position: relative;
+    width: 50%;
+    height: 100%;
+}
+
+right {
+    display: inline-block;
+	position: relative;
+    width: 50%;
+    height: 100%;
+}
+
+left photo {
+	display: block;
+	position: absolute;
+	
+	top: 0px;
+	left: 0px;
+	
+    width: 100%;
+	height: 100%;
+	
+	background-color: rgba(0,0,0,0.7);
+	background-color: rgba(255,255,255,0.7);
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+left photo.bg-img {
+	background-color: rgba(255,255,255,0);
+	background-size: cover;
+}
+
+
+right main {
+	display: flex;
+
+    width: 100%;
+	height: 100%;
+
+	align-items: center;
+	justify-content: center;
+	flex-direction: column
+}
+
+right main name{
+	display: block;
+	font-family: sans-serif;
+	font-size: 32px;
+	font-weight: bold;
+	color: rgba(0,0,0,1);
+}
+
+right main www {
+	width: auto;
+}
+
+right main www a{
+	display: block;
+	font-family: cursive;
+	font-size: 16px;
+	text-decoration: none;
+	color: rgba(0,0,0,0.8);
+	
+}
+right main www a:before {
+	font-family: sans-serif;
+	content: "/* ";
+}
+right main www a:after {
+	font-family: sans-serif;
+	content: " */";
+}
+
+right main www border-bottom{
+	display: block;
+	
+	height: 2px;
+	width: 0px;
+	
+	margin: 0 auto;
+	
+	background-color: rgba(0,0,0,0.8);
+	
+	transition: width 2s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+	transition: width 2s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+right main www:hover border-bottom{
+	width: 100%;
+}
+
+right main social {
+	display: flex;
+	margin: 5px 0px;
+}
+right main social a {
+	margin: 0px 5px;
+	color: rgba(0,0,0,0.8);
+	
+	font-size: 20px;
+	
+	padding-bottom: 20px;
+	
+    border-left-style: solid;
+    border-right-style: solid;
+    border-bottom-style: solid;
+	
+    border-left-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+	
+    border-left-color: rgba(255,255,255,0);
+    border-right-color: rgba(255,255,255,0);
+    border-bottom-color: rgba(255,255,255,0);
+	
+	transition: color 1s Linear;
+	transition:	color				1s	cubic-bezier(0.18, 0.89, 0.32, 1.28)
+			,	padding-bottom		1s	cubic-bezier(0.18, 0.89, 0.32, 1)
+			,	border-width		1s	cubic-bezier(0.18, 0.89, 0.32, 1)
+			,	border-bottom-color	1s	cubic-bezier(0.18, 0.89, 0.32, 1.28);
+}
+right main social a:hover {
+	/* padding-bottom: 0px;
+	
+	border-left-width: 20px;
+    border-right-width: 20px;
+    border-bottom-width: 20px; */
+}
+right main social a.mail:hover {
+	color: #0072c6;
+	
+	border-bottom-color: #0072c6;
+}
+right main social a.facebook:hover {
+	color: #3b5998;
+	
+	border-bottom-color: #3b5998;
+}
+right main social a.twitter:hover {
+	color: #1da1f2;
+	
+	border-bottom-color: #1da1f2;
+}
+right main social a.google-plus:hover {
+	color: #d73d32;
+	
+	border-bottom-color: #d73d32;
+}
+right main social a.youtube:hover {
+	color: #e62117;
+	
+	border-bottom-color: #e62117;
+}
